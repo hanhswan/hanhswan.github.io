@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Han Han Swan Yee Htet — Computer Science with Artificial Intelligence graduate. Portfolio and projects." />
+  <title>Han Han Swan Yee Htet | Portfolio</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; }
+    .container { max-width: 980px; margin: 0 auto; padding: 24px; }
+    header { padding: 56px 0 24px; }
+    h1 { font-size: 2.2rem; margin: 0 0 8px; }
+    .subtitle { opacity: 0.85; margin: 0; }
+    .pillrow { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .pill { border: 1px solid rgba(127,127,127,0.35); padding: 6px 10px; border-radius: 999px; font-size: 0.9rem; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 24px 0; }
+    @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .card { border: 1px solid rgba(127,127,127,0.35); border-radius: 16px; padding: 16px; }
+    .card h2 { margin: 0 0 8px; font-size: 1.2rem; }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; }
+    a { color: inherit; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      border: 1px solid rgba(127,127,127,0.35);
+      padding: 10px 12px; border-radius: 12px;
+      text-decoration: none;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    footer { padding: 28px 0 40px; opacity: 0.75; font-size: 0.95rem; }
+    .muted { opacity: 0.8; }
+    ul { margin: 10px 0 0; padding-left: 18px; }
+    .section-title { margin: 28px 0 12px; font-size: 1.25rem; }
+    .cards-3 { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    @media (min-width: 860px) { .cards-3 { grid-template-columns: 1fr 1fr 1fr; } }
+
+    .project-title { font-weight: 650; margin: 0 0 6px; }
+    .tagrow { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .tag { border: 1px solid rgba(127,127,127,0.25); border-radius: 999px; padding: 3px 8px; font-size: 0.85rem; opacity: 0.9; }
+    .meta { font-size: 0.95rem; opacity: 0.8; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Han Han Swan Yee Htet</h1>
+      <p class="subtitle">
+        Computer Science with Artificial graduate (University of Sussex) · Aspiring Software Developer · United Kingdom
+      </p>
+
+      <div class="pillrow">
+        <span class="pill">Java</span>
+        <span class="pill">Python</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">OOP</span>
+        <span class="pill">DSA</span>
+        <span class="pill">AI fundamentals</span>
+      </div>
+
+      <div class="links" style="margin-top:18px;">
+        <a class="btn" href="https://github.com/hanhswan" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn" href="mailto:hanh.swan@gmail.com">Email</a>
+        <!-- Add these when ready -->
+        <!-- <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN/" target="_blank" rel="noreferrer">LinkedIn</a> -->
+        <!-- <a class="btn" href="./Han_Swan_CV.pdf" target="_blank" rel="noreferrer">CV (PDF)</a> -->
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <h2>About</h2>
+        <p class="muted">
+          I’m a Computer Science graduate with a strong interest in software engineering and problem solving.
+          I particularly enjoy working with Java and building well-structured projects that turn theory into
+          practical, real-world development skills.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li><strong>Languages:</strong> Java, Python, JavaScript</li>
+          <li><strong>Core:</strong> OOP, Data Structures & Algorithms, Software Engineering principles</li>
+          <li><strong>AI:</strong> AI fundamentals, intelligent systems concepts (project-driven)</li>
+          <li><strong>Web:</strong> HTML, CSS, JavaScript</li>
+          <li><strong>Databases:</strong> SQL (Relational)</li>
+          <li><strong>Tools:</strong> Git & GitHub, Linux/CLI, VS Code, IntelliJ</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+  <h2 class="section-title">Projects</h2>
+  <section class="card">
+    <p class="muted">
+      This section will be updated as I develop and upload personal and academic projects.
+      Each project will include a clear description, technologies used, and links to source code.
+    </p>
+  </section>
+
+    <!-- CERTIFICATIONS -->
+    <h2 class="section-title">Certifications</h2>
+    <section class="card">
+      <ul>
+        <li><strong>BSc Computer Science with Artificial Intelligence</strong> — University of Sussex</li>
+        <li><strong>CPE English Proficiency</strong> — Grade B</li>
+        <li class="muted"><em>More certifications coming soon…</em></li>
+      </ul>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Han Swan</div>
+      <div class="muted">Built with HTML/CSS · Hosted on GitHub Pages</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
